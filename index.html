@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CelebMeet - Book Your Celebrity Vacation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌟 CelebMeet - Book a Vacation with Your Favorite Celebrity!</h1>
+
+  <section id="admin-section">
+    <h2>Add Celebrity Vacation</h2>
+    <form id="celebForm">
+      <input type="text" placeholder="Celebrity Name" id="name" required />
+      <input type="text" placeholder="Image URL" id="image" required />
+      <input type="text" placeholder="Vacation Location" id="location" required />
+      <input type="text" placeholder="Available Dates" id="dates" required />
+      <input type="number" placeholder="Ticket Price ($)" id="price" required />
+      <textarea placeholder="Meeting Terms (e.g., dinner, photoshoot)" id="terms" required></textarea>
+      <button type="submit">Add Vacation</button>
+    </form>
+  </section>
+
+  <section id="vacations">
+    <h2>Available Celebrity Vacations</h2>
+    <div id="vacationList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
